@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "author": "joyrexus",
   "license": "MIT",
-  "dependencies": {
-    "mindbody-client": "git+https://650a23c1c2292bcb57c5b4133842af94f1441b01:x-oauth-basic@github.com/emmadev/mindbody-client#master"
-  },
+  "dependencies": { },
   "devDependencies": {
     "aws-sdk": "2.6.9",
     "tape": "^4.6.3"

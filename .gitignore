@@ -1,0 +1,6 @@
+init.sh
+output.txt
+*.tmp.yml
+node_modules/
+npm-debug.log
+tags

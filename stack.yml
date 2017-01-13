@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: A simple AWS Lambda function.
+
+
+Parameters:
+
+    site:
+        Description: Mindbody Source Site
+        Default: 2058
+        Type: String
+
+    keys:
+        Description: Mindbody Source Credentials
+        Default: "Emma2:SECRET"
+        Type: String
+
+
+Resources:
+
+    GetClientCount:
+        Type: 'AWS::Serverless::Function'
+        Properties:
+            Handler: index.handler
+            Runtime: nodejs4.3
+            CodeUri: ./functions/GetClientCount
+            Description: A simple AWS Lambda function.
+            MemorySize: 128
+            Timeout: 3
+            Policies: []
+            Environment:
+                Variables:
+                    MB_SOURCE_SITE: !Ref site
+                    MB_SOURCE_KEYS: !Ref keys

@@ -4,3 +4,4 @@ output.txt
 node_modules/
 npm-debug.log
 tags
+.DS_Store

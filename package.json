@@ -1,11 +1,12 @@
 {
-  "name": "mb-demo",
+  "name": "mb-demo-simple",
   "version": "0.0.1",
   "author": "joyrexus",
   "license": "MIT",
-  "dependencies": { },
+  "dependencies": {
+    "mindbody-client": "git+ssh://github.com/emmadev/mindbody-client#master"
+  },
   "devDependencies": {
-    "aws-sdk": "2.6.9",
     "tape": "^4.6.3"
   }
 }

@@ -7,7 +7,7 @@ aws cloudformation package                  \
 
 aws cloudformation deploy                   \
     --template-file stack.tmp.yml           \
-    --stack-name mb-demo                    \
+    --stack-name MindbodyDemo               \
     --capabilities CAPABILITY_IAM           \
     --parameter-overrides                   \
         site=$MB_SOURCE_SITE                \
